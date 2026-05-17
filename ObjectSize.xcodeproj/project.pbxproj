@@ -12,6 +12,10 @@
 		A1000001000000000000003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000003 /* ViewController.swift */; };
 		A1000001000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000005 /* Assets.xcassets */; };
 		A1000001000000000000010 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000002000000000000010 /* ARKit.framework */; };
+		A1000001000000000000011 /* BoxMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000011 /* BoxMeasurement.swift */; };
+		A1000001000000000000012 /* ObjectScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000012 /* ObjectScanner.swift */; };
+		A1000001000000000000013 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000013 /* ScannerViewModel.swift */; };
+		A1000001000000000000014 /* BoxNodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000014 /* BoxNodeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A1000002000000000000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1000002000000000000007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1000002000000000000010 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		A1000002000000000000011 /* BoxMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxMeasurement.swift; sourceTree = "<group>"; };
+		A1000002000000000000012 /* ObjectScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanner.swift; sourceTree = "<group>"; };
+		A1000002000000000000013 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		A1000002000000000000014 /* BoxNodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxNodeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +44,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A1000004000000000000000 /* ObjectSize */ = {
+		A1000004000000000000000 = {
 			isa = PBXGroup;
 			children = (
 				A1000004000000000000001 /* ObjectSize */,
@@ -50,6 +58,10 @@
 			children = (
 				A1000002000000000000001 /* AppDelegate.swift */,
 				A1000002000000000000002 /* SceneDelegate.swift */,
+				A1000002000000000000011 /* BoxMeasurement.swift */,
+				A1000002000000000000012 /* ObjectScanner.swift */,
+				A1000002000000000000013 /* ScannerViewModel.swift */,
+				A1000002000000000000014 /* BoxNodeFactory.swift */,
 				A1000002000000000000003 /* ViewController.swift */,
 				A1000002000000000000005 /* Assets.xcassets */,
 				A1000002000000000000007 /* Info.plist */,
@@ -116,7 +128,7 @@
 				en,
 				Base,
 			);
-			mainGroup = A1000004000000000000000 /* ObjectSize */;
+			mainGroup = A1000004000000000000000;
 			productRefGroup = A1000004000000000000002 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1000001000000000000003 /* ViewController.swift in Sources */,
+				A1000001000000000000011 /* BoxMeasurement.swift in Sources */,
+				A1000001000000000000012 /* ObjectScanner.swift in Sources */,
+				A1000001000000000000013 /* ScannerViewModel.swift in Sources */,
+				A1000001000000000000014 /* BoxNodeFactory.swift in Sources */,
 				A1000001000000000000001 /* AppDelegate.swift in Sources */,
 				A1000001000000000000002 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,9 +288,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JNLVR5Z357;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ObjectSize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -285,6 +302,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.objectsize.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,9 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JNLVR5Z357;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ObjectSize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -309,6 +328,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.objectsize.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +357,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = A1000009000000000000001 /* Project object */;
 }
