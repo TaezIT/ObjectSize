@@ -11,6 +11,7 @@
 		A1000001000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000002 /* SceneDelegate.swift */; };
 		A1000001000000000000003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000003 /* ViewController.swift */; };
 		A1000001000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000005 /* Assets.xcassets */; };
+		A1000001000000000000010 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000002000000000000010 /* ARKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A1000002000000000000003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1000002000000000000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1000002000000000000007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000002000000000000010 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1000001000000000000010 /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 			children = (
 				A1000004000000000000001 /* ObjectSize */,
 				A1000004000000000000002 /* Products */,
+				A1000004000000000000003 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +63,14 @@
 				A1000002000000000000000 /* ObjectSize.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000004000000000000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000010 /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
